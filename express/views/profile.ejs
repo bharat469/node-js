@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Profile Page</title>
+</head>
+<body>
+    <%- include('common/header.ejs')%>
+    <h1 style="color: red">Hello  <%= data.name %> </h1>
+    <h1 style="color: green">Your Phone number is  <%= data.phone %> </h1>
+<ul>
+
+    <% data.skills.forEach((item)=>{ %>
+<li>
+    <h1><%=item%></h1>
+</li>
+    <% }) %>
+</ul>
+</body>
+</html>
